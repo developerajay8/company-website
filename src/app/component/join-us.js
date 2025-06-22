@@ -10,7 +10,7 @@ export default function Joinus() {
           <h5 className="text-[#FFFF00] pb-2 text-[23px]">
             Be Part of India’s AI Future
           </h5>
-          <h1 className="text-[60px] text-[#fff]">Join Us</h1>
+          <h1 className="text-[40px] md:text-[60px] text-[#fff]">Join Us</h1>
         </div>
         <div className="pt-[48px] ">
           <div className="p-6 lg:flex cursor-pointer items-center justify-between bg-gradient-to-r from-[#43430D] to-[#464646] origin-left border-[#9F9F00] border-[1px] rounded-[10px]">

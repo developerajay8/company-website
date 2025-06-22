@@ -53,6 +53,12 @@ export default function Navbar() {
           <div className="lg:block hidden relative">
             <nav className="hidden md:flex items-center gap-[24px] text-[16px] font-[400] text-[#FFFF00] bg-gradient-to-r from-[#272700] to-[#505000] origin-left px-[16px] rounded-[10px] border-[1px] border-[#8E8E00]">
               <Link
+                href="/"
+                className="p-[10px] hover:text-yellow-300 transition-colors"
+              >
+                Home
+              </Link>
+              <Link
                 href="/aboutus"
                 className="p-[10px] hover:text-yellow-300 transition-colors"
               >
@@ -83,21 +89,21 @@ export default function Navbar() {
                   <div className="absolute left-0 top-full mt-1 w-40 bg-[#272700] rounded-md shadow-lg z-50">
                     <Link
                       href="/aasvaaera"
-                      className="block px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors"
+                      className="block px-4 py-2  transition-colors"
                       onClick={handleSubmenuClick}
                     >
                       AasvaaEra
                     </Link>
                     <Link
                       href="/lumex"
-                      className="block px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors"
+                      className="block px-4 py-2  transition-colors"
                       onClick={handleSubmenuClick}
                     >
                       Lumex
                     </Link>
                     <Link
                       href="/gojuris"
-                      className="block px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors"
+                      className="block px-4 py-2  transition-colors"
                       onClick={handleSubmenuClick}
                     >
                       Gojuris
@@ -161,6 +167,13 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-700">
+              <Link
+                href="/"
+                className="block px-3 py-2 text-yellow-400 hover:text-yellow-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
               <Link
                 href="/aboutus"
                 className="block px-3 py-2 text-yellow-400 hover:text-yellow-300"
@@ -240,7 +253,7 @@ export default function Navbar() {
               </Link>
 
               <div className="flex space-x-2 px-3 pt-4">
-                <button className="border border-yellow-400 text-yellow-400 px-4 py-2 rounded text-sm hover:bg-yellow-400 hover:text-black transition-colors">
+                <button className="border border-yellow-400 text-yellow-400 px-4 py-2 rounded text-sm  transition-colors">
                   Login
                 </button>
                 <button className="bg-yellow-400 text-black px-4 py-2 rounded text-sm hover:bg-yellow-500 transition-colors">

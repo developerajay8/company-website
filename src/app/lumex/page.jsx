@@ -34,7 +34,7 @@ export default function Page() {
                 <div className="max-w-[1240px] mx-auto my-auto px-6 md:px-12 flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
 
                     {/* Left: Logo */}
-                    <div className="flex-shrink-0 relative">
+                    <div className="flex-shrink-0 lg:block hidden relative">
                         <img
                             src="/images/image.png"
                             alt="LUMDX Logo"
@@ -46,8 +46,8 @@ export default function Page() {
                     {/* Right: Text + Buttons */}
                     <div className="text-center lg:text-left max-w-[752px]">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-[#F6F6F6]">
-                            Turn Moments into Business <br />
-                            with the <span className="text-[#FFFF00]">Fastest AI SaaS</span> <br />
+                            Turn Moments into Business <br className='sm:block hidden'/>
+                            with the <span className="text-[#FFFF00]">Fastest AI SaaS</span> <br className='sm:block hidden'/>
                             <span className="text-[#FFFF00]">Solution</span>
                         </h1>
 
@@ -70,6 +70,17 @@ export default function Page() {
 
                         </div>
                     </div>
+
+                    <div className="flex-shrink-0 lg:hidden block
+                     relative">
+                        <img
+                            src="/images/image.png"
+                            alt="LUMDX Logo"
+                            className="relative z-10 "
+                        />
+                        <div className="absolute inset-0 z-0 rounded-full blur-3xl opacity-46 mx-auto bg-[#FFFF00] scale-150" />
+                    </div>
+
                 </div>
             </section>
 
@@ -145,15 +156,19 @@ export default function Page() {
                             src="/images/Group 34.svg"
                             alt="GoJuris AI Chat"
                         />
-                        <div className="flex  gap-5">
+                        <div className="flex gap-3 ">
+                            <div className="">
                           <img
                             src="/images/image 46.png"
                             alt="GoJuris AI Chat"
                         />
+                        </div>
+                            <div className="">
                          <img
                             src="/images/image 47.png"
                             alt="GoJuris AI Chat"
                         />
+                        </div>
                         </div>
                     </div>
                     </div>
@@ -234,7 +249,7 @@ export default function Page() {
                     </div>
 
                     {/* mobile */}
-                    <div className="sm:hidden block px-[20px] ">
+                    <div className="sm:hidden block  ">
                         <div className=" gap-5 pt-[40px] ">
                             <img
                                 src="/images/image 55.png"

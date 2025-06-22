@@ -24,7 +24,7 @@ export default function Page() {
 
 
         <div className="max-w-[1240px] mx-auto px-6 py-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 items-center">
             {/* Left Content */}
             <div className="space-y-8">
               <div>

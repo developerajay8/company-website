@@ -40,7 +40,7 @@ export default function Page() {
                 <div className="max-w-[1240px] mx-auto my-auto px-6 md:px-12 flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
 
                     {/* Left: Logo */}
-                    <div className="flex-shrink-0 relative">
+                    <div className="flex-shrink-0 lg:block hidden relative">
                         <img
                             src="/images/image 62.png"
                             alt="LUMDX Logo"
@@ -73,10 +73,21 @@ export default function Page() {
 
                         </div>
                     </div>
+
+                    <div className="flex-shrink-0 relative lg:hidden block">
+                        <img
+                            src="/images/image 62.png"
+                            alt="LUMDX Logo"
+                            className="relative z-10 "
+                        />
+                        <div className="absolute inset-0 z-0 rounded-full blur-3xl opacity-46 mx-auto bg-[#FFFF00] scale-150" />
+                    </div>
                 </div>
             </section>
 
-            <section className="bg-[#0c0c0c] text-white px-4 md:px-16 md:py-[80px] py-[48px] relative overflow-hidden">
+            <section style={{
+                backgroundImage: 'url("/images/Frame 3385290.png")',
+            }} className=" text-white bg-cover bg-center w-full px-4 md:px-16 md:py-[80px] py-[48px] relative overflow-hidden">
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-8 ">
         {/* Left Side */}
         <div>

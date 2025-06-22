@@ -80,7 +80,7 @@ export default function Page() {
                 <div className="max-w-[1240px] mx-auto my-auto px-6 md:px-12 flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
 
                     {/* Left: Logo */}
-                    <div className="flex-shrink-0 relative">
+                    <div className="flex-shrink-0 lg:block hidden relative">
                         <img
                             src="/images/Frame 3385273.png"
                             alt="aasvaaera Logo"
@@ -98,7 +98,7 @@ export default function Page() {
 
                         <div className="mt-9 flex flex-wrap gap-4 justify-center lg:justify-start">
 
-                            <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                            <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 md:hover:bg-[#FFFF00]  hover:text-black hover:shadow-yellow-glow custom-glow">
                                 Launch a Free Demo
                             </button>
                             <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
@@ -112,10 +112,27 @@ export default function Page() {
 
                         </div>
                     </div>
+
+                      <div className="flex-shrink-0 lg:hidden block relative">
+                        <img
+                            src="/images/Frame 3385273.png"
+                            alt="aasvaaera Logo"
+                            className="relative z-10 "
+                        />
+                        <div className="absolute inset-0 z-0 rounded-full blur-3xl opacity-46 mx-auto bg-[#FFFF00] scale-150" />
+                    </div>
                 </div>
             </section>
 
-            <section className="bg-[#0c0c0c] text-white px-4 md:px-16 md:py-[80px] py-[48px] relative overflow-hidden">
+
+
+
+
+
+
+            <section style={{
+                backgroundImage: 'url("/images/Frame 3385290.png")',
+            }}  className="bg-cover bg-center w-full text-white px-4 md:px-16 md:py-[80px] py-[48px] relative overflow-hidden">
                 <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-8 ">
                     {/* Left Side */}
                     <div>

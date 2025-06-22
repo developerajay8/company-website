@@ -8,6 +8,7 @@ import ContactForm from "./component/contact-from";
 import Footer from "./component/footer";
 import ProductSuiteCarousel from "./component/ProductSuiteCarousel";
 import Ourjourney from "./component/ourjourney";
+import Wesolve from "./component/we-solve";
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
@@ -24,9 +25,10 @@ export default function Home() {
     <Navbar/>
     <Herosection/>
     <Ourjourney/>
-    <Joinus/>
+    <Wesolve/>
     <ProductSuiteCarousel/>
     <Finalthough/>
+    <Joinus/>
     <ContactForm/>
     <Footer/>
   </main>;
